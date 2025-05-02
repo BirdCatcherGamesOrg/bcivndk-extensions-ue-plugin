@@ -1,4 +1,4 @@
-﻿// // SPDX-License-Identifier: MPL-2.0
+﻿// SPDX-License-Identifier: MPL-2.0
 
 #pragma once
 
@@ -9,14 +9,18 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Config = Game)
 class UBCIVNDKDialogueDeveloperSettings : public UDeveloperSettings
 {
 	GENERATED_BODY()
 
 public:
 
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(Config, EditDefaultsOnly)
+	double CharactersPerSecond = 50.0;
+	
+	
+	UPROPERTY(Config, EditDefaultsOnly)
 	TArray<TSubclassOf<class URichTextBlockDecorator>> SupportedDecorators;
 	
 };

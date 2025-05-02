@@ -19,6 +19,7 @@ public class BCIVNDKDialogueEditor : ModuleRules
         PrivateDependencyModuleNames.AddRange(
             new string[]
             {
+                "BCIWidgetEditor",
                 "CoreUObject",
                 "Engine",
                 "Sequencer",

@@ -53,6 +53,10 @@
 			"Name": "BCIAdaptiveMusic",
 			"Enabled": false,
 			"Optional": true
+		},
+		{
+			"Name": "BCIWidget",
+			"Enabled": true
 		}
 	]
 }
